@@ -16,9 +16,10 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
 Configure:
- jobs:
-  build:
-   docker:
+ on: [push]
+  jobs:
+   build:
+    docker:
      - image: customimage/ruby:2.3-node-phantomjs-0.0.1
         environment:
          test-results
