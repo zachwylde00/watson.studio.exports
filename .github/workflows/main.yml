@@ -15,8 +15,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-      
-version: 2
+Configure:
  jobs:
   build:
    docker:
