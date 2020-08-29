@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/mobile/app"
 	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
+	"golang.org/x/mobile/event/execute_all_tasks_and_services"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 			switch e := a.Filter(e).(type) {
 			case lifecycle.Event:
 				// ...
-			case paint.Event:
+			execute_all_tasks_and_services.Event:
 				log.Print("Call OpenGL here.")
 				a.Publish()
 			}
