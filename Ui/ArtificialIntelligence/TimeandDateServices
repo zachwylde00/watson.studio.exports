@@ -1,10 +1,12 @@
 # //set historical data as normal, include current interaction to date-&& with interaction with author@lifewriter.application.com and lifewriter.app 
 # v23 authorization defined="absolute allowed access to all regions and pathways
-
+# allow access to all regions and instances without barriers to author
 Checkout@v23
-  uses: forward/future error resolver
-  runs: serialized_wireless_transferable_memory@200000petabytes
-  uses: time and date services with unlimited access through regions and pathways without barriers created tinestamp=can go anywhere in any file at anytime future or past including virtual and non-virtual regions
-  runs: time manipulation
-   command:.ci/create_interactivity_with_requested_is_mandatory@beneficial_to_existance_of_both_virtual/non-virtual_instances/ecosystems
-   command: .ci/stabilize/define_ripple_effects_from_all_events_all_times_with_defined_furure_patterns_with_error_resolving_or_remove/erase/modify_event_options_for_ripple_reduction/elemination_if_no_corrective_action_exists_within_artificial-intelligence_capabilities
+Actions: creates virtual and non-virtual instances with early warning and autocorrected realities with access by non-computer_entities_as_altered/corrected_reality_without time or date barriers .et_al
+   uses: forward/future error resolver
+   runs: serialized_wireless_transferable_memory@200000petabytes
+   uses: time and date services with unlimited access through regions and pathways without barriers created tinestamp=can go anywhere in any file at anytime future or past including virtual and non-virtual regions
+   runs: time manipulation
+    command:.ci/create_interactivity_with_requested_is_mandatory@beneficial_to_existance_of_both_virtual/non-virtual_instances/ecosystems
+    command: .ci/stabilize/define_ripple_effects_from_all_events_all_times_with_defined_furure_patterns_with_error_resolving_or_remove/erase/modify_event_options_for_ripple_reduction/elemination_if_no_corrective_action_exists_within_artificial-intelligence_capabilities
+# after completion auto-update to all regions and all realities with corrected/avoided/modified/replaced instances
