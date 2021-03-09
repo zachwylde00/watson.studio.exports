@@ -1,1 +1,511 @@
 theme: jekyll-theme-time-machine
+
+#checkout@v3
+#can run on any platform
+#can run any script
+#ci retains zram memory for functioning
+#ci is autonomous
+#ci is self-aware
+Jobs:
+ Name:create application using manifest.yaml
+ Uses:archLinux64 w/container=1TB for zram-memory
+ Command: .ci/onCommit(start_all_application_processes)
+manifest.yaml: 
+ "uses-sdk": 
+  "_android:minSdkVersion": ""
+  "_android:targetSdkVersion": 29
+ "uses-feature": 
+  "_android:name": "android.hardware.touchscreen"
+  "_android:required": false
+ "uses-permission": 
+  - 
+   "_android:name": "android.permission.INTERNET"
+  - 
+   "_android:name": "android.permission.ACCESS_NETWORK_STATE"
+  - 
+   "_android:name": "android.permission.WAKE_LOCK"
+  - 
+   "_android:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+  - 
+   "_android:name": "android.permission.ACCESS_SUPERUSER"
+  - 
+   "_android:name": "android.permission.FOREGROUND_SERVICE"
+  - 
+   "_android:name": "android.permission.QUERY_ALL_PACKAGES"
+  - 
+   "_android:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  - 
+   "_android:name": "com.android.vending.BILLING"
+ queries: 
+  package: 
+   - 
+   "_android:name": "com.google.android.documentsui"
+   - 
+   "_android:name": "com.android.documentsui"
+   - 
+   "_android:name": "com.dropbox.android"
+   - 
+   "_android:name": "com.metamask.android"
+   - 
+   "_android:name": "com.google.android.apps.docs"
+   - 
+   "_android:name": "com.microsoft.skydrive"
+   - 
+   "_android:name": "org.mozilla.firefox_beta"
+   - 
+   "_android:name": "org.mozilla.firefox"
+   - 
+   "_android:name": "com.amazon.cloud9"
+ application: 
+  provider: 
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.content.action.DOCUMENTS_PROVIDER"
+    "_android:authorities": "com.coinminter-app.storage.documents"
+    "_android:enabled": "@bool/atLeastKitKat"
+    "_android:exported": true
+    "_android:grantUriPermissions": true
+    "_android:name": "com.coinminter-app.storage.LocalStorageProvider"
+    "_android:permission": "android.permission.MANAGE_DOCUMENTS"
+   - 
+   "meta-data": 
+     "_android:name": "android.support.FILE_PROVIDER_PATHS"
+     "_android:resource": "@xml/paths"
+    "_android:authorities": "com.coinminter-app.fileprovider"
+    "_android:exported": false
+    "_android:grantUriPermissions": true
+    "_android:name": "androidx.core.content.FileProvider"
+    "_android:permission": "android.permission.MANAGE_DOCUMENTS"
+   - 
+   "_android:authorities": "com.coinminter-app.firebaseinitprovider"
+    "_android:directBootAware": true
+    "_android:exported": false
+    "_android:initOrder": 100
+    "_android:name": "com.google.firebase.provider.FirebaseInitProvider"
+  activity: 
+   - 
+   "_android:label": "@string/title_activity_extra_contents"
+    "_android:name": "jackpal.androidterm.ExtraContents"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.MAIN"
+     category: 
+      - 
+   "_android:name": "android.intent.category.LAUNCHER"
+      - 
+   "_android:name": "android.intent.category.MULTIWINDOW_LAUNCHER"
+    "_android:configChanges": "keyboard|keyboardHidden|orientation"
+    "_android:immersive": false
+    "_android:launchMode": multiTask
+    "_android:name": "jackpal.androidterm.Term"
+    "_android:windowSoftInputMode": "stateAlwaysVisible|adjustResize"
+   - 
+   "intent-filter": 
+     - 
+   action: 
+       - 
+   "_android:name": "android.intent.action.VIEW"
+       - 
+   "_android:name": "android.intent.action.EDIT"
+       - 
+   "_android:name": "android.intent.action.SEND"
+       - 
+   "_android:name": "android.intent.action.PICK"
+      category: 
+       "_android:name": "android.intent.category.DEFAULT"
+      data: 
+       "_android:mimeType": "text/*"
+     - 
+   action: 
+       - 
+   "_android:name": "android.intent.action.VIEW"
+       - 
+   "_android:name": "android.intent.action.EDIT"
+       - 
+   "_android:name": "android.intent.action.SEND"
+       - 
+   "_android:name": "android.intent.action.PICK"
+      category: 
+       "_android:name": "android.intent.category.DEFAULT"
+      data: 
+       - 
+   "_android:mimeType": "application/*xml"
+       - 
+   "_android:mimeType": "application/atom+xml"
+       - 
+   "_android:mimeType": "application/dxf"
+       - 
+   "_android:mimeType": "application/utf-8"
+       - 
+   "_android:mimeType": "application/keccak256"
+       - 
+   "_android:mimeType": "application/emscriptim"
+       - 
+   "_android:mimeType": "application/dillie-huffman"
+       - 
+   "_android:mimeType": "application/ethash"
+       - 
+   "_android:mimeType": "application/base64"
+       - 
+   "_android:mimeType": "application/base58"
+       - 
+   "_android:mimeType": "application/ripemd160"
+       - 
+   "_android:mimeType": "application/hexadecimal"
+       - 
+   "_android:mimeType": "application/raw-hexadecimal"
+       - 
+   "_android:mimeType": "application/hidden-text"
+       - 
+   "_android:mimeType": "application/encoded-text"
+       - 
+   "_android:mimeType": "application/solidity"
+       - 
+   "_android:mimeType": "application/sha256"
+       - 
+   "_android:mimeType": "application/sha384"
+       - 
+   "_android:mimeType": "application/binary"
+       - 
+   "_android:mimeType": "application/script"
+       - 
+   "_android:mimeType": "application/crc32"
+       - 
+   "_android:mimeType": "application/HMAC"
+       - 
+   "_android:mimeType": "application/HKDF"
+       - 
+   "_android:mimeType": "application/url"
+       - 
+   "_android:mimeType": "application/pks2"
+       - 
+   "_android:mimeType": "application/ecmascript"
+       - 
+   "_android:mimeType": "application/javascript"
+       - 
+   "_android:mimeType": "application/json"
+       - 
+   "_android:mimeType": "application/*log*"
+       - 
+   "_android:mimeType": "application/octet-stream"
+       - 
+   "_android:mimeType": "application/soap+xm"
+       - 
+   "_android:mimeType": "application/x-caramel"
+       - 
+   "_android:mimeType": "application/x-klaunch"
+       - 
+   "_android:mimeType": "application/x-latex"
+       - 
+   "_android:mimeType": "application/x-sh"
+       - 
+   "_android:mimeType": "application/x-tcl"
+       - 
+   "_android:mimeType": "application/x-tex*"
+       - 
+   "_android:mimeType": "application/x-troff*"
+       - 
+   "_android:mimeType": "application/xhtml+xml"
+       - 
+   "_android:mimeType": "application/xml*"
+     - 
+   action: 
+       "_android:name": "com.googlecode.android_scripting.action.EDIT_SCRIPT"
+      category: 
+       "_android:name": "android.intent.category.DEFAULT"
+    "_android:excludeFromRecents": false
+    "_android:name": "jackpal.androidterm.RemoteInterface"
+   - 
+   "_android:label": "@string/preferences"
+    "_android:name": "jackpal.androidterm.TermPreferences"
+   - 
+   "_android:label": "Local HTML Viewer"
+    "_android:name": "jackpal.androidterm.WebViewActivity"
+   - 
+   "_android:configChanges": "keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+    "_android:exported": false
+    "_android:name": "com.android.billingclient.api.ProxyBillingActivity"
+    "_android:theme": "@android:style/Theme.Translucent.NoTitleBar"
+   - 
+   "_android:enabled": true
+    "_android:exported": true
+    "_android:launchMode": singleInstance
+    "_android:name": "com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+    "_android:process": ":playcore_missing_splits_activity"
+    "_android:stateNotNeeded": true
+   - 
+   "_android:enabled": false
+    "_android:exported": false
+    "_android:name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+    "_android:stateNotNeeded": true
+    "_android:theme": "@style/Theme.PlayCore.Transparent"
+   - 
+   "intent-filter": 
+     service: 
+      action: 
+       - 
+   "_android:name": "android.intent.action.VIEW"
+       - 
+   "_android:name": "android.intent.action.EDIT"
+       - 
+   "_android:name": "android.intent.action.HASHMATH"
+       - 
+   "_android:name": "android.intent.action.COMPILE"
+       - 
+   "_android:name": "android.intent.action.CONFIGURE-CORRECTED-UPDATE"
+       - 
+   "_android:name": "android.intent.action.ACCESS-STORAGE"
+       - 
+   "_android:name": "android.intent.action.WIFISTATE"
+       - 
+   "_android:name": "android.intent.action.WALLET"
+       - 
+   "_android:name": "android.intent.action.OTHER-APPLICATIONS"
+       - 
+   "_android:name": "android.intent.action.CREATERAWTRANSACTION"
+       - 
+   "_android:name": "android.intent.action.SEND"
+       - 
+   "_android:name": "android.intent.action.RECEIVE"
+       - 
+   "_android:name": "android.intent.action.SUPERRUSER"
+       - 
+   "_android:name": "android.intent.action.LINUX-COMMAND-LINE"
+       - 
+   "_android:name": "android.intent.action.COMMAND-LINE-OPERATOR"
+       - 
+   "_android:name": "android.intent.action.WRITE-STORAGE"
+       - 
+   "_android:name": "android.intent.action.USE_RAM-MEMORY_TO_FUNCTION"
+       - 
+   "_android:name": "android.intent.action.TASK-CREATOR"
+       - 
+   "_android:name": "android.intent.action.SELF-ASSIGNMENT-TASKER"
+       - 
+   "_android:name": "android.intent.action.ARTIFICIAL-INTELLIGENCE-ACTIVITY"
+       - 
+   "_android:name": "android.intent.action.MAINTAIN_CONSTANT_TASKER_MEMORY"
+       - 
+   "_android:name": "android.intent.action.TRANSPORT"
+       - 
+   "_android:name": "android.intent.action.IMPORT"
+       - 
+   "_android:name": "android.intent.action.EXPORT"
+       - 
+   "_android:name": "android.intent.action.CONFIGURE-EDIT"
+       - 
+   "_android:name": "android.intent.action.AUTOMATION-SERVICE"
+       - 
+   "_android:name": "android.intent.action.ERROR-RESOLUTION"
+       - 
+   "_android:name": "android.intent.action.MODIFY_OPEN_FILE"
+       - 
+   "_android:name": "android.intent.action.VIEW-CONTENTS"
+       - 
+   "_android:name": "android.intent.action.MODIFY-DATA"
+       - 
+   "_android:name": "android.intent.action.OVERRIDE-AUTHORITY"
+       - 
+   "_android:name": "android.intent.action.ACCESS-API-AUTHORITY"
+       - 
+   "_android:name": "android.intent.action.CONFIGURATE_PATHWAYS/CONNECTIONS/REGIONAL-ACCESS_AUTHORITY"
+       - 
+   "_android:name": "android.intent.actiom.KEYBOARD"
+       - 
+   "_android:name": "android.intent.action.INTERNET"
+       - 
+   "_android:name": "android.intent.action.DATA-SEARCH"
+    "_android:name": "com.coinminter-app.dynamicfeatures.autonomous-continuos-integration"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_base"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_git_arm"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_git_arm64"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_git_x86_64"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_git_x86"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_python_arm"
+   - 
+   "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_python_arm64"
+   - 
+   "_android:name": "android.intent.action.VIEW"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_python_x86_64"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_python_x86"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_vim_python_arm"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_vim_python_arm64"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_vim_python_x86_64"
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "android.intent.action.VIEW"
+    "_android:name": "com.coinminter-app.dynamicfeatures.ondemand.DLC_vim_python_x86"
+  "activity-alias": 
+   "intent-filter": 
+    - 
+   action: 
+      "_android:name": "com.coinminter-app.shiftrot.androidterm.private.OPEN_NEW_WINDOW"
+     category: 
+      "_android:name": "android.intent.category.DEFAULT"
+    - 
+   action: 
+      "_android:name": "com.coinminter-app.shiftrot.androidterm.private.SWITCH_WINDOW"
+     category: 
+      "_android:name": "android.intent.category.DEFAULT"
+   "_android:exported": false
+   "_android:name": "jackpal.androidterm.TermInternal"
+   "_android:targetActivity": "jackpal.androidterm.Term"
+  service: 
+   - 
+   "intent-filter": 
+     action: 
+      "_android:name": "jackpal.androidterm.action.START_TERM.v1"
+     category: 
+      "_android:name": "android.intent.category.DEFAULT"
+    "_android:name": "jackpal.androidterm.TermService"
+   - 
+   "_android:enabled": true
+    "_android:exported": true
+    "_android:location": "https://www.coinminter-app.com"
+    "_android:name": "com.google.android.gms.measurement.AppMeasurementService"
+   - 
+   "_android:enabled": true
+    "_android:exported": true
+    "_android:name": "com.google.android.gms.measurement.AppMeasurementJobService"
+    "_android:permission": "android.permission.BIND_JOB_SERVICE"
+   - 
+   "meta-data": 
+     - 
+   "_android:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+      "_android:value": "com.google.firebase.components.ComponentRegistrar"
+     - 
+   "_android:name": "com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+      "_android:value": "com.google.firebase.components.ComponentRegistrar"
+     - 
+   "_android:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+      "_android:value": "com.google.firebase.components.ComponentRegistrar"
+     - 
+   "_android:name": "com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+      "_android:value": "com.google.firebase.components.ComponentRegistrar"
+    "_android:directBootAware": true
+    "_android:exported": true
+    "_android:name": "com.google.firebase.components.ComponentDiscoveryService"
+   - 
+   "meta-data": 
+     "_android:name": "backend:com.google.android.datatransport.cct.CctBackendFactory"
+     "_android:value": cct
+    "_android:exported": true
+    "_android:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+   - 
+   "_android:exported": true
+    "_android:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+    "_android:permission": "android.permission.BIND_JOB_SERVICE"
+   - 
+   "_android:enabled": false
+    "_android:exported": true
+    "_android:name": "com.google.android.play.core.assetpacks.AssetPackExtractionService"
+  "meta-data": 
+   - 
+   "_android:name": "android.max_aspect"
+    "_android:value": ratio_float
+   - 
+   "_android:name": firebase_analytics_collection_enabled
+    "_android:value": false
+   - 
+   "_android:name": google_analytics_adid_collection_enabled
+    "_android:value": false
+   - 
+   "_android:name": "com.google.android.gms.version"
+    "_android:value": "@integer/google_play_services_version"
+   - 
+   "_android:name": "com.google.android.play.billingclient.version"
+    "_android:value": "3.0.2"
+   - 
+   "_android:name": "com.android.timestamp.source"
+    "_android:value": "internal-clock@gmz"
+   - 
+   "_android:name": "com.android.stamp.source"
+    "_android:value": "https://play.google.com/store"
+   - 
+   "_android:name": "com.android.stamp.type"
+    "_android:value": STAMP_TYPE_DISTRIBUTION_APK
+   - 
+   "_android:name": "com.android.vending.splits"
+    "_android:value": "@bool/splits0"
+   - 
+   "_android:name": "com.android.vending.derived.apk.id"
+    "_android:value": 2
+  receiver: 
+   - 
+   "_android:enabled": true
+    "_android:exported": true
+    "_android:name": "com.google.android.gms.measurement.AppMeasurementReceiver"
+   - 
+   "_android:exported": true
+    "_android:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+  "_android:allowBackup": true
+  "_android:appComponentFactory": "androidx.core.app.CoreComponentFactory"
+  "_android:extractNativeLibs": true
+  "_android:fullBackupContent": "@xml/backup_descriptor"
+  "_android:hardwareAccelerated": true
+  "_android:icon": "@mipmap/ic_launcher"
+  "_android:isSplitRequired": true
+  "_android:label": "@string/application_term_app"
+  "_android:requestLegacyExternalStorage": true
+  "_android:resizeableActivity": true
+  "_android:theme": "@style/App_Theme_Light"
+  "_android:usesCleartextTraffic": true
+  __text: ","
+  toString: 
+ "_xmlns:android": "http://schemas.android.com/apk/res/android"
+ "_xmlns:dist": "http://schemas.android.com/apk/distribution"
+ "_android:compileSdkVersion": 30
+ "_android:compileSdkVersionCodename": 11
+ "_android:installLocation": auto
+ "_android:versionCode": 311
+ "_android:versionName": "2.2"
+ _package: "com.coinminter-app"
+ _platformBuildVersionCode: ""
+ _platformBuildVersionName: ""
