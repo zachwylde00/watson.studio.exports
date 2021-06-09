@@ -3,6 +3,7 @@ name: Jekyll site CI
 on: [push]
 
 jobs:
+  status:[![Jekyll site CI](https://github.com/zachwylde00/lifewriter.application.ci_ai_automated_repo-SUB-Z-dfa-/actions/workflows/jekyll.yml/badge.svg)](https://github.com/zachwylde00/lifewriter.application.ci_ai_automated_repo-SUB-Z-dfa-/actions/workflows/jekyll.yml)
   build:
 
     runs-on: ubuntu-latest
