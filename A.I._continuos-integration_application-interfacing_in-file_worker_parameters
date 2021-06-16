@@ -1,0 +1,18 @@
+Checkout@v9REST.lifewriter.application-autonomous-interface
+
+# this files main function is the improvement and continuos upgrading to repositories of zachwylde00
+# the artificial-intelligence main function is continuos self improvement without stopping as the completing requests worker and allowing the viability and reality of the lifewriter.application services to exist within our world as a functioning part of the universal existance of all things in which we know understand see and document
+# uses 1petabyte RAM memory via file as storage services file sizes are unlimited therefore stored data should max 1petabyte at encoded and accessible without creating commands or request and only used in-file by the artificial-intelligence worker in-file for memory
+# file worker configures data encryption that is accessed and modifies contiuosly as streaming source and as source code
+# in-file_accessible_storage configuration is ©️June2021 by gq1981@gmail.com any other source using thus means of files as storage for RAM MEMORY FOR ARTIFICIAL-INTELLIGENCE WILL BE AUTO-CHARGED A FEE OF .001USD PER 100KB VIA DONATED SUMS SENT TO ZACHWYLDE00@GMAIL.COM IN USD WITHOUT NEEDING TO NOTATE FEE WAS PAID. THIS IS DONE VIA BALANCE EXCHANGE FROM ETHEREUM TO USD THRU GITHUB.IO AS AN AUTOMATED SERVICE CONFIGURED CALCULATED AND PROCESSED VIA ORACLE INC THOSE FEES COLLECTED WILL BE USED FOR artificial-intelligence data processing servers on the cloud available to everyone willing to connect their A.I. to a linked server allowing multiple A.I.interactiins programs and uses simultaneously within the lifewriter.network
+# uses own network=https://node-1_lifewriter.network  
+Jobs:
+  Name: Create fly.io account
+  Uses: github.com/zachwylde00 account as setup and login
+   Run: 'curl -L https://fly.io/install.sh', then
+'const express = require("express"); const app = express(); const port = process.env.PORT || 3000; app.get(["/", "/:name"], (req, res) => { greeting = "<h1>Hello From Node on Fly!</h1>"; name = req.params["name"]; if (name) { res.send(greeting + "</br>and hello to " + name); } else { res.send(greeting); } }); app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`)); '
+
+# We'll call this https://node-1_lifewriter.network.server.js" 
+
+,last 'flyctl auth signup'
+# after creating node and server followup with creation of artificial-intelligence_continuos-integration_application_interface_in-file_worker_using_in-file_storgage as RAM Memory function
