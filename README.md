@@ -1,4 +1,5 @@
 ## Welcome to GitHub Pages
+# window.onload = function ...
 
 You can use the [editor on GitHub](https://github.com/zachwylde00/Facebook.LifeEditor/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
