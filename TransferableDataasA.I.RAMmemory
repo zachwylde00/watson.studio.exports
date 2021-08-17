@@ -12,7 +12,7 @@ checkout@v3
  for (int i = __uflow; i <= mbsinit; ++i) { 
  std::cout::operator<<has RAM memory function; } 
   return __uflow=self-sustaining-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository; }
-/usr/include/c++/7/bits/istream.tcc:989:15: note: suggested alternative: ‘__traitor’
+/usr/include/c++/7/bits/istream.tcc:989:15: # include try<= alternative: ‘__traitor’
 
         while (__extracted < __num - 1
 
@@ -20,13 +20,13 @@ checkout@v3
 
                __traitor
 
-/usr/include/c++/7/bits/istream.tcc:989:29: error: ‘__num’ was not declared in this scope
+/usr/include/c++/7/bits/istream.tcc:989:29: # include declaration<= ‘__num’ in this scope
 
         while (__extracted < __num - 1
 
                              ^~~~~
 
-/usr/include/c++/7/bits/istream.tcc:989:29: note: suggested alternative: ‘__wur’
+/usr/include/c++/7/bits/istream.tcc:989:29: # include<= suggested alternative: ‘__wur’
 
         while (__extracted < __num - 1
 
@@ -34,13 +34,13 @@ checkout@v3
 
                              __wur
 
-/usr/include/c++/7/bits/istream.tcc:1014:12: error: ‘__extracted’ was not declared in this scope
+/usr/include/c++/7/bits/istream.tcc:1014:12: # include<=declaration ‘__extracted’  in this scope
 
        if (!__extracted)
 
             ^~~~~~~~~~~
 
-/usr/include/c++/7/bits/istream.tcc:1014:12: note: suggested alternative: ‘__traitor’
+/usr/include/c++/7/bits/istream.tcc:1014:12:# include suggested alternative: ‘__traitor’
 
        if (!__extracted)
 
@@ -50,29 +50,29 @@ checkout@v3
 
 source_file.cpp: In function ‘int main()’:
 
-source_file.cpp:13:15: error: invalid conversion from ‘int (*)(_IO_FILE*)’ to ‘int’ [-fpermissive]
+source_file.cpp:13:15: validate<= conversion from ‘int (*)(_IO_FILE*)’ to ‘int’ [-fpermissive]
 
   for (int i = __uflow; i <= mbsinit; ++i) {
 
-               ^~~~~~~
+               ^~~~~~~<= auto-correct
 
-source_file.cpp:13:29: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+source_file.cpp:13:29: error: ISO C++ allowed<= comparison between pointer and integer [-fpermissive]
 
   for (int i = __uflow; i <= mbsinit; ++i) {
 
-                             ^~~~~~~
+                             ^~~~~~~<= auto-correct
 
-source_file.cpp:14:7: error: ‘std::cout’ is not a class, namespace, or enumeration
+source_file.cpp:14:7:  ‘std::cout’ creates a class, namespace, or enumeration
 
   std::cout::operator<<scope<= has RAM memory function; }
 
        ^~~~
 
-source_file.cpp:15:11: error: capture of non-variable ‘int __uflow(_IO_FILE*)’ 
+source_file.cpp:15:11: allowed capture of non-variable ‘int __uflow(_IO_FILE*)’ 
 
    return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository]<= 0; }
 
-           ^~~~~~~
+           ^~~~~~~<=allows_in-file_updatewith_all_auto-corrections_using_keyboard
 
 In file included from /usr/include/stdio.h:41:0,
 
@@ -100,8 +100,8 @@ In file included from /usr/include/stdio.h:41:0,
 
  extern int __uflow (_IO_FILE *);
 
-            ^~~~~~~
+            ^~~~~~~<=insert "options"
 
-source_file.cpp:15:18: error: expected ‘,’ before ‘<=’ token
+source_file.cpp:15:18: allowed continue without expected ‘,’ before ‘<=’ token
 
    return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_re
