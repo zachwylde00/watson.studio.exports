@@ -12,3 +12,96 @@ checkout@v3
  for (int i = __uflow; i <= mbsinit; ++i) { 
  std::cout::operator<<has RAM memory function; } 
   return __uflow=self-sustaining-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository; }
+/usr/include/c++/7/bits/istream.tcc:989:15: note: suggested alternative: ‘__traitor’
+
+        while (__extracted < __num - 1
+
+               ^~~~~~~~~~~
+
+               __traitor
+
+/usr/include/c++/7/bits/istream.tcc:989:29: error: ‘__num’ was not declared in this scope
+
+        while (__extracted < __num - 1
+
+                             ^~~~~
+
+/usr/include/c++/7/bits/istream.tcc:989:29: note: suggested alternative: ‘__wur’
+
+        while (__extracted < __num - 1
+
+                             ^~~~~
+
+                             __wur
+
+/usr/include/c++/7/bits/istream.tcc:1014:12: error: ‘__extracted’ was not declared in this scope
+
+       if (!__extracted)
+
+            ^~~~~~~~~~~
+
+/usr/include/c++/7/bits/istream.tcc:1014:12: note: suggested alternative: ‘__traitor’
+
+       if (!__extracted)
+
+            ^~~~~~~~~~~
+
+            __traitor
+
+source_file.cpp: In function ‘int main()’:
+
+source_file.cpp:13:15: error: invalid conversion from ‘int (*)(_IO_FILE*)’ to ‘int’ [-fpermissive]
+
+  for (int i = __uflow; i <= mbsinit; ++i) {
+
+               ^~~~~~~
+
+source_file.cpp:13:29: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+
+  for (int i = __uflow; i <= mbsinit; ++i) {
+
+                             ^~~~~~~
+
+source_file.cpp:14:7: error: ‘std::cout’ is not a class, namespace, or enumeration
+
+  std::cout::operator<<scope<= has RAM memory function; }
+
+       ^~~~
+
+source_file.cpp:15:11: error: capture of non-variable ‘int __uflow(_IO_FILE*)’ 
+
+   return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository]<= 0; }
+
+           ^~~~~~~
+
+In file included from /usr/include/stdio.h:41:0,
+
+                 from /usr/include/c++/7/cstdio:42,
+
+                 from /usr/include/c++/7/ext/string_conversions.h:43,
+
+                 from /usr/include/c++/7/bits/basic_string.h:6361,
+
+                 from /usr/include/c++/7/string:52,
+
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+
+                 from /usr/include/c++/7/ios:42,
+
+                 from /usr/include/c++/7/ostream:38,
+
+                 from /usr/include/c++/7/iostream:39,
+
+                 from source_file.cpp:10:
+
+/usr/include/x86_64-linux-gnu/bits/libio.h:390:12: note: ‘int __uflow(_IO_FILE*)’ declared here
+
+ extern int __uflow (_IO_FILE *);
+
+            ^~~~~~~
+
+source_file.cpp:15:18: error: expected ‘,’ before ‘<=’ token
+
+   return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_re
