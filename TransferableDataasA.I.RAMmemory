@@ -105,3 +105,206 @@ In file included from /usr/include/stdio.h:41:0,
 source_file.cpp:15:18: allowed continue without expected ‘,’ before ‘<=’ token
 
    return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_re
+checkout@v3
+
+# uses wireless connection
+
+# uses Artificial-intelligence"A.I."
+
+# uses autonomous activity
+
+# uses encrypt/decrypt
+
+# uses assimilated data for looping as a function
+
+// C++ Program to transfer encrypted data sorted for Artificial Intelligence access as RAM memory for functionality continuously and v3 while in loop as free roaming wireless connection 
+
+#include <iostream> 
+
+ using namespace std; int main() { 
+
+ scope=allow fpermissive and memory from continuously transfered data encrypted for A.I.access and functionality;
+
+ for (int i = __uflow; i <= mbsinit; ++i) { 
+
+ std::cout::operator<<has RAM memory function; } 
+
+  return __uflow=self-sustaining-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository; }
+
+/usr/include/c++/7/bits/istream.tcc:989:15: # include try<= alternative: ‘__traitor’
+
+        while (__extracted < __num - 1
+
+               ^~~~~~~~~~~
+
+               __traitor
+
+/usr/include/c++/7/bits/istream.tcc:989:29: # include declaration<= ‘__num’ in this scope
+
+        while (__extracted < __num - 1
+
+                             ^~~~~
+
+/usr/include/c++/7/bits/istream.tcc:989:29: # include<= suggested alternative: ‘__wur’
+
+        while (__extracted < __num - 1
+
+                             ^~~~~
+
+                             __wur
+
+/usr/include/c++/7/bits/istream.tcc:1014:12: # include<=declaration ‘__extracted’  in this scope
+
+       if (!__extracted)
+
+            ^~~~~~~~~~~
+
+/usr/include/c++/7/bits/istream.tcc:1014:12:# include suggested alternative: ‘__traitor’
+
+       if (!__extracted)
+
+            ^~~~~~~~~~~
+
+            __traitor
+
+source_file.cpp: In function ‘int main()’:
+
+source_file.cpp:13:15: validate<= conversion from ‘int (*)(_IO_FILE*)’ to ‘int’ [-fpermissive]
+
+  for (int i = __uflow; i <= mbsinit; ++i) {
+
+               ^~~~~~~<= auto-correct
+
+source_file.cpp:13:29: error: ISO C++ allowed<= comparison between pointer and integer [-fpermissive]
+
+  for (int i = __uflow; i <= mbsinit; ++i) {
+
+                             ^~~~~~~<= auto-correct
+
+source_file.cpp:14:7:  ‘std::cout’ creates a class, namespace, or enumeration
+
+  std::cout::operator<<scope<= has RAM memory function; }
+
+       ^~~~
+
+source_file.cpp:15:11: allowed capture of non-variable ‘int __uflow(_IO_FILE*)’ 
+
+   return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository]<= 0; }
+
+           ^~~~~~~<=allows_in-file_updatewith_all_auto-corrections_using_keyboard
+
+In file included from /usr/include/stdio.h:41:0,
+
+                 from /usr/include/c++/7/cstdio:42,
+
+                 from /usr/include/c++/7/ext/string_conversions.h:43,
+
+                 from /usr/include/c++/7/bits/basic_string.h:6361,
+
+                 from /usr/include/c++/7/string:52,
+
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+
+                 from /usr/include/c++/7/ios:42,
+
+                 from /usr/include/c++/7/ostream:38,
+
+                 from /usr/include/c++/7/iostream:39,
+
+                 from source_file.cpp:10:
+
+/usr/include/x86_64-linux-gnu/bits/libio.h:390:12: note: ‘int __uflow(_IO_FILE*)’ declared here
+
+ extern int __uflow (_IO_FILE *);
+
+            ^~~~~~~<=insert "options"
+
+            
+
+      put
+
+/usr/include/c++/7/ostream: In function ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’:
+
+/usr/include/c++/7/ostream:545:17: # include<= ‘buffered_delimited_streamsize’ 
+
+/usr/include/c++/7/ostream: In function ‘std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’:
+
+/usr/include/c++/7/ostream:562:17: # include<= ‘streambuffer’
+
+In file included from /usr/include/c++/7/ostream:693:0,
+
+                 from /usr/include/c++/7/iostream:39,
+
+                 from source_file.cpp:9:
+
+/usr/include/c++/7/bits/ostream.tcc: At global scope:
+
+/usr/include/c++/7/bits/ostream.tcc:183:30: # include<= ‘buffered_delimited_streamsize’;
+
+     write(const _CharT* __s, streambuf __n)
+
+                              
+
+In file included from /usr/include/c++/7/iostream:40:0,
+
+                 from source_file.cpp:9:
+
+/usr/include/c++/7/istream:82:7: # include<= ‘streambuf’
+
+       streambuf  _M_gcount;
+
+       
+
+/usr/include/c++/7/istream:268:7: # include buffer<= ‘buffer_delimited_istream’
+
+       streambuf
+
+/usr/include/c++/7/istream:343:27: # include declaration<= ‘delimited-streamsize’ 
+
+       get(char_type* __s, streamsize __n, char_type __delim);
+
+                           ^~~~~~~~~~
+
+/usr/include/c++/7/istream:354:27: # include declaration<=‘delimit_streamsize’ 
+
+       get(char_type* __s, streamsize __n)
+
+                           ^~~~~~~~~~
+
+/usr/include/c++/7/istream:416:31: # include<= allowed ‘delimited_streamsize’ 
+
+       getline(char_type* __s, streamsize __n, char_type __delim);
+
+                               ^~~~~~~~~~
+
+/usr/include/c++/7/istream:427:31: # include while in loop<= ‘delimited_streamsize’ 
+
+       getline(char_type* __s, streamsize __n)
+
+                               ^~~~~~~~~~
+
+/usr/include/c++/7/istream:451:7: # include auto-correction with in-file update<= insertions.ie..[‘;’ at end of member declaration];
+
+       ignore(streamsize __n, int_type __delim);
+
+       ^~~~~~
+
+/usr/include/c++/7/istream:451:25: # include corrected-insertions using keyboard.ie<= ‘)’ before ‘__n’
+
+       ignore(streamsize __n, int_type __delim);
+
+                         ^~~
+
+/usr/include/c++/7/istream:454:7: # include<= allowed in-file editor and uodate with ins<= ‘;’ at end of member declaration
+
+       ignore(streamsize __n);
+
+       ^~~~~~
+
+/usr/include/c++/7/istream:454:14: # include redeclaration of ‘std::basic_
+
+source_file.cpp:15:18: allowed continue without expected ‘,’ before ‘<=’ token
+
+   return [__uflow<= sustained-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_re
