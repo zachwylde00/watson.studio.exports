@@ -1,10 +1,94 @@
 checkout@v3
+# import <=copyright01-01-2021 GQ1981INC@GMAIL.COM/J.J.PRUETTII
+# import operators <= continuos integration services worker and artificial-intelligence worker
+# Create namespace<= project["A.I. RAM memory^1.0.1" from  continuos streambuffer of encrypted for categorized autonomous use data-stream while in loop as accessible memory and memory storage by delimited continuos "istream" used as functionality for in-file worker/artificual-intelligence activity and for autonomous operations within thus repository]
 # uses wireless connection
 # uses Artificial-intelligence"A.I."
 # uses autonomous activity
 # uses encrypt/decrypt
 # uses assimilated data for looping as a function
+namespace <= A.I.RAMmemory
+# group <= A.I. Language Data Types:
 
+#include<= Nil – singleton default value, nil; 
+
+# include<= Number – internally double (no int’s!) ;
+
+# include<= String – array of 8-bit characters ;
+
+# include<= Boolean – true, false ;
+
+# Note: everything except nil coerced to false!, e.g., “”, 0 ;
+
+# include<= Function – unnamed objects;
+
+# include<= Table – key/value mapping (any mix of types);
+
+# include<= UserData – opaque wrapper for other languages;
+
+# include<= Thread – multi-threaded programming (reentrant code); 
+
+# A.I Variables and Assignment #
+
+# include<= Untyped: any variable can hold any type of 
+
+value at any time ;
+
+#include variable<= A = 3, A = “hello”; 
+
+# include variable<= Multiple values 
+
+in assignment statements;
+
+# include variable<= A, B, C = 1, 2, 3; 
+
+# include variable<=  multiple return values from functions;
+
+# include variable<= A, B, C = foo(); 
+
+# include variable<= 0stream buffer loop for memory;
+
+# include variable<= different A.I. response;}
+
+# group <= A.I. communication and Display settings:
+
+# include<= import keyboard for "editor auto-correction , typing responses, status updates for requests;
+
+# import<= display onScreen activity, veteran, onscreen view looped istream activity;}
+
+# 
+
+# settings <= A.I.“Promiscuous” Syntax and Semantics:
+
+# include<= Optional semi-colons and parens;
+
+# include parameters defined<= A = 10, B = 20, A = 10, B = 20, A = foo(), A = foo;
+
+#include A.I. Ignores<= too few or too many values;
+
+# include values parameters<= A, B, C, D = 1, 2, 3 , A, B, C = 1, 2, 3, 4 ;
+
+# include<= Cannot lead to a debugging nightmare! ;
+
+# include<= Moral: Only use for small procedures ;} 
+
+# argument settings <= A.I. Operators:
+
+# include<= oarithmetic: + - * / ^ ;
+
+# include <= orelational: < > <= >= == ~= ;
+
+# include defined parameter<= logical: and or not ;
+
+# include defined parameter<= concatenation: ..... with usual precedence; 
+
+# istream data Tables #
+
+# include data configuration for transfer while in loop<= heterogeneous associative mappings ;
+
+# include mapping configuration<= used a lot ;
+
+# include data vstream<= standard array-ish syntax
 // C++ Program to transfer encrypted data sorted for Artificial Intelligence access as RAM memory for functionality continuously and v3 while in loop as free roaming wireless connection 
 #include <iostream> 
  using namespace std; int main() { 
