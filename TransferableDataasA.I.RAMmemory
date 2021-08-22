@@ -1,6 +1,6 @@
 checkout@v3
-# import <=copyright01-01-2021 GQ1981INC@GMAIL.COM/J.J.PRUETTII
-# import operators <= continuos integration services worker and artificial-intelligence worker
+# copyright01-01-2021 GQ1981INC@GMAIL.COM/J.J.PRUETTII
+# operators <= continuos integration services worker and artificial-intelligence worker
 # Create namespace<= project["A.I. RAM memory^1.0.1" from  continuos streambuffer of encrypted for categorized autonomous use data-stream while in loop as accessible memory and memory storage by delimited continuos "istream" used as functionality for in-file worker/artificual-intelligence activity and for autonomous operations within thus repository]
 # uses wireless connection
 # uses Artificial-intelligence"A.I."
@@ -98,7 +98,259 @@ in assignment statements;
   return __uflow=self-sustaining-autonomous-functioning-freeroaming-wireless-connection_transfering_data_while_in_loop_as_RAM_Memory_located_within_the_functioning_Artificial-Intelligence_worker_in_this_repository; }
 /usr/include/c++/7/bits/istream.tcc:989:15: # include try<= alternative: ‘__traitor’
 
-        while (__extracted < __num - 1
+ jobs:
+ . name:neural network
+   uses: deep learning Linux 64bit with 1 2terabyte storage container@"httos:gq1981inc@gmail.com"
+   command: .ci/execute_javascriot_neural-network_script
+   script:[import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    System.out.println("neural-network storage")"
+helper(Hopfield test, String s,
+float [] test_data)
+ {
+float [] dd = new float[10];
+for (int i=0; i<10; i++) 
+{
+dd[i] = test_data[i];
+}
+int index = (int)(9.0f * (float)Math.random());
+if (dd[index] < 0.0f) dd[index] = 1.0f;
+else dd[index] = -1.0f;
+float [] rr = test.recall(dd, 5);
+System.out.print(s+"\nOriginal data: ");
+for (int i = 0; i < 10; i++)
+System.out.print(pp(test_data[i]) + " ");
+System.out.print("\nRandomized data: ");
+for (int i = 0; i < 10; i++)
+System.out.print(pp(dd[i]) + " ");
+System.out.print("\nRecognized pattern: ");
+for (int i = 0; i < 10; i++)
+System.out.print(pp(rr[i]) + " ");
+System.out.println();
+}
+//include 16 steps of pattern thought used by the human brain via
+WGET: "https://www.intelltheory.com › piaget
+Human Intelligence: Jean Piaget - intelltheory"
+lists:{
+pattern 0;
+Original data: 1 1 1 0 0 0 0 0 0 0;
+Randomized data: 1 1 1 0 0 0 1 0 0 0;
+Recognized pattern: 1 1 1 0 0 0 0 0 0 0;
+pattern 1;
+Original data: 0 0 0 1 1 1 0 0 0 0;
+Randomized data: 1 0 0 1 1 1 0 0 0 0;
+Recognized pattern: 0 0 0 1 1 1 0 0 0 0;
+pattern 2;
+Original data: 0 0 0 0 0 0 0 1 1 1;
+Randomized data: 0 0 0 1 0 0 0 1 1 1;
+Recognized pattern: 0 0 0 0 0 0 0 1 1;
+ 1for (int j=0; j<numInputs; j++) 
+temp += weights[index][j] * inputCells[j];
+}
+return 2.0f * temp - tempStorage[index];
+}
+//The method train is used to set the two-dimensional weight array and the onedimensional
+//tempStorage array in which each element is the sum of the corresponding
+//row in the two-dimensional weight array:
+public void train() {
+for (int j=1; j<numInputs; j++) {
+for (int i=0; i<j; i++) {
+for (int n=0; n<trainingData.size(); n++) {
+float [] data =
+(float [])trainingData.elementAt(n);
+float temp1 =
+adjustInput(data[i]) * adjustInput(data[j]);
+float temp = truncate(temp1 + weights[j][i]);
+weights[i][j] = weights[j][i] = temp;
+}
+
+for (int i=0; i<numInputs; i++) {
+tempStorage[i] = 0.0f;
+for (int j=0; j<i; j++) {
+tempStorage[i] += weights[i][j];
+}
+
+Once the arrays weight and tempStorage are defined, it is simple to recall an
+original input pattern from a similar test pattern:
+public float [] recall(float [] pattern,
+int numIterations) {
+for (int i=0; i<numInputs; i++) {
+inputCells[i] = pattern[i];
+}
+for (int ii = 0; ii<numIterations; ii++) {
+for (int i=0; i<numInputs; i++) {
+if (deltaEnergy(i) > 0.0f) {
+1inputCells[i] = 1.0f;
+} else {
+inputCells[i] = 0.0f;
+}
+
+
+return inputCells;
+
+//7.3 Testing the Hopfield Neural Network Class
+//The test program for the Hopfield neural network class is T est Hopf ield. This test
+//program defined three test input patterns, each with ten values:
+static float [] data [] = {
+{ 1, 1, 1, -1, -1, -1, -1, -1, -1, -1},
+{-1, -1, -1, 1, 1, 1, -1, -1, -1, -1},
+{-1, -1, -1, -1, -1, -1, -1, 1, 1, 1}
+};
+//The following code fragment shows how to create a new instance of the Hopf ield
+//class and train it to recognize these three test input patterns:
+test = new Hopfield(10);
+test.addTrainingData(data[0]);
+test.addTrainingData(data[1]);
+test.addTrainingData(data[2]);
+test.train();
+The static method helper is used to slightly scramble an input pattern, then test the
+training Hopfield neural network to see if the original pattern is re-created:
+helper(test, "pattern 0", data[0]);
+helper(test, "pattern 1", data[1]);
+helper(test, "pattern 2", data[2]);
+public float[] recall(float[] in) {
+for (int i = 0; i < numInputs; i++)
+inputs[i] = in[i];
+forwardPass();
+float[] ret = new float[numOutputs];
+for (int i = 0; i < numOutputs; i++)
+ret[i] = outputs[i];
+return ret;
+}
+public void forwardPass() {
+for (int h = 0; h < numHidden1; h++) {
+hidden1[h] = 0.0f;
+}
+for (int h = 0; h < numHidden2; h++) {
+hidden2[h] = 0.0f;
+}
+for (int i = 0; i < numInputs; i++) {
+for (int h = 0; h < numHidden1; h++) {
+hidden1[h] +=
+inputs[i] * W1[i][h];
+}
+
+for (int i = 0; i < numHidden1; i++) {
+for (int h = 0; h < numHidden2; h++) {
+hidden2[h] +=
+hidden1[i] * W2[i][h];
+}
+
+for (int o = 0; o < numOutputs; o++)
+outputs[o] = 0.0f;
+for (int h = 0; h < numHidden2; h++) {
+for (int o = 0; o < numOutputs; o++) {
+outputs[o] +=
+sigmoid(hidden2[h]) * W3[h][o];rk to a disk file:
+class Neural_2H implements Serializable {
+//There is a static factory method that reads a saved network file from disk and builds
+//an instance of Neural 2H and there is a class constructor that builds a new untrained
+//network in memory, given the number of neurons in each layer:
+public static
+Neural_2H Factory(String serialized_file_name)
+public Neural_2H(int num_in, int num_hidden1,
+int num_hidden2,
+int num_output)
+
+transient protected
+ArrayList inputTraining = new Vector();
+transient protected
+ArrayList outputTraining = new Vector();
+public float TRAINING_RATE = 0.5f;private int current_example = 0;
+public float train(ArrayList ins, ArrayList v_outs) {private int current_example = 0;
+public float train(ArrayList ins, ArrayList v_outs) {int i, h, o;
+float error = 0.0f;
+int num_cases = ins.size();
+//for (int example=0; example<num_cases; example++) {
+// zero out error arrays:
+for (h = 0; h < numHidden1; h++)
+hidden1_errors[h] = 0.0f;
+for (h = 0; h < numHidden2; h++)
+hidden2_errors[h] = 0.0f;
+for (o = 0; o < numOutputs; o++)
+output_errors[o] = 0.0f;
+// copy the input values:
+for (i = 0; i < numInputs; i++) {
+inputs[i] = ((float[]) ins.get(current_example))[i];
+}
+// copy the output values:
+float[] outs = (float[]) v_outs.get(current_example);forwardPass();
+for (o = 0; o < numOutputs; o++) {
+output_errors[o] =
+(outs[o] -
+outputs[o])
+* sigmoidP(outputs[o]);for (h = 0; h < numHidden2; h++) {
+hidden2_errors[h] =
+hidden2_errors[h] * sigmoidP(hidden2[h]);
+}
+for (h = 0; h < numHidden1; h++) {
+hidden1_errors[h] =
+hidden1_errors[h] * sigmoidP(hidden1[h]);
+}
+Nowfor (h = 0; h < numHidden2; h++) {
+hidden2_errors[h] = 0.0f;
+for (o = 0; o < numOutputs; o++) {
+hidden2_errors[h] +=
+output_errors[o] * W3[h][o];
+}for (h = 0; h < numHidden1; h++) {
+hidden1_errors[h] = 0.0f;
+for (o = 0; o < numHidden2; o++) {
+hidden1_errors[h] +=
+hidden2_errors[o] * W2[h][o];
+}
+// momentum scaling term that is applied
+// to last delta weight:
+private float alpha = 0f;// update the hidden2 to output weights:
+for (o = 0; o < numOutputs; o++) {
+for (h = 0; h < numHidden2; h++) {
+W3[h][o] +=
+TRAINING_RATE * output_errors[o] * hidden2[h];
+W3[h][o] = clampWeight(W3[h][o]);
+}
+}
+// update the hidden1 to hidden2 weights:
+for (o = 0; o < numHidden2; o++) {
+for (h = 0; h < numHidden1; h++) {
+W2[h][o] +=
+TRAINING_RATE * hidden2_errors[o] * hidden1[h];
+W2[h][o] = clampWeight(W2[h][o]);
+}
+}
+// update the input to hidden1 weights:
+for (h = 0; h < numHidden1; h++) {
+for (i = 0; i < numInputs; i++) {
+W1[i][h] +=
+TRAINING_RATE * hidden1_errors[h] * inputs[i];
+W1[i][h] = clampWeight(W1[i][h]);
+}
+}
+for (o = 0; o < numOutputs; o++) {
+error += Math.abs(outs[o] - outputs[o]);
+}current_example++;
+if (current_example >= num_cases)
+current_example = 0;
+return error;
+}
+YW3[h][o] +=
+TRAINING_RATE * output_errors[o] * hidden2[h] +
+// apply the momentum term:
+alpha * W3_last_delta[h][o];
+W3_last_delta[h][o] = TRAINING_RATE *
+output_errors[o] *
+hidden2[h];
+current_example++;
+if (current_example >= num_cases)
+current_example = 0;
+return error;
+}
+]}}{
+   while (__extracted < __num - 1
 
                ^~~~~~~~~~~
 
