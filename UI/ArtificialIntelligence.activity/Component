@@ -1,0 +1,36 @@
+#import { NgTerminalModule } from 'ng-terminal';
+#//...
+#@NgModule({
+#    imports: [
+#        NgTerminalModule
+#    //...
+Jobs:
+  Name:Create Artificial-Intelligence_command_line_terminal
+   uses: xterm.js
+    Command:
+       wget: "//git clone,//wget:"https://github.com/qwefgh90/ng-terminal.git,//npm install
+,//npm run start
+# Function:put (<ng-terminal> into a source code of [Component])
+     Command: .ci/execute<script>//...
+       export class YourComponent implements AfterViewInit{
+       @ViewChild('term', { static: true }) child: NgTerminal;
+       ngAfterViewInit(){,
+       //...
+       this.child.keyEventInput.subscribe(e => {
+      console.log('keyboard event:' + e.domEvent.keyCode + ', ' + e.key);
+      const ev = e.domEvent;
+      const printable = !ev.altKey && !ev.ctrlKey && !ev.metaKey;
+      if (ev.keyCode === 13) {
+      this.child.write('\n' + FunctionsUsingCSI.cursorColumn(1) + '$ '); // \r\n
+      } else if (ev.keyCode === 8) {
+        if (this.child.underlying.buffer.active.cursorX > 2) {
+          this.child.write('\b \b');
+        }
+      } else if (printable) {
+        this.child.write(e.key);
+      }
+      })</script>
+    //...
+  }
+
+  //...
