@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: run
-      run: chmod +x blah.bash /home/runner/work/ _temp/blahblah/run_deploy
+      run: /chmod +x blah.sh_/home/runner/work/ runner/blahblah/run_deploy
     - name: configure
       run: ./configure[![Scala CI](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment
     - name: make
