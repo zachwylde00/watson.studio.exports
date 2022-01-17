@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: run
-      run: /usr/bin/open_/Users/blahblah/run_deploy
+      run: /usr/bin/open $path/Users/blahblah/run_deploy
     - name: configure
       run: ./configure[![Scala CI](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment
     - name: make
