@@ -11,6 +11,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: run
       run: /home/runner/work/ $/blahblah/run_deploy
+    - name: run
+      run: $chmod +x blah.sh.
     - name: configure
       run: ./configure[![Scala CI](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment
     - name: make
