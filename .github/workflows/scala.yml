@@ -13,6 +13,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: status badge
+      run: status[![Scala CI](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment
     - name: Run 
       run: deployment
-          [![Scala CI](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment)](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml)
+          
