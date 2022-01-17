@@ -10,10 +10,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: ./configure
+      run: ./configure[![Scala CI](https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment
     - name: make
       run: make
     - name: make check
       run: make check
     - name: make distcheck
       run: make distcheck
+    - name: Run
+      run: deployment-Scala_CI-test
