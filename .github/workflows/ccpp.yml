@@ -12,7 +12,7 @@ jobs:
     - name: run
       run:  echo chmod +x blah.sh  echo /runner/blahblah/run_deploy  let a=1  let b=0  let c=a/b -bash:let:c=a/b:division by 0 !error token is "b"  echo ?1
     - name: configure
-      run: ./configure ! Scala CI=status echo wget:https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment
+      run: configure ! Scala=status ${{wget:https://github.com/zachwylde00/lifewriter.application.A.I./actions/workflows/scala.yml/badge.svg?event=deployment}}
     - name: make
       run: make
     - name: make check
