@@ -16,9 +16,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
- 
-  version: 3.1 beta.AI"ArtificialIntelligence"Automated Repository
-  Jobs:
+Jobs:
         build:
          docker:
           - image: customimage/ruby:2.3-node-phantomjs-0.0.1
@@ -30,15 +28,14 @@ jobs:
           │   └── results.xml
           └── rspec
               └── results.xml
-  RAILS_ENV: test
-  RACK_ENV: test             
-  image: circleci/mysql:5.6
-  restore_cache: 
-    keys:-v1-myapp-{{ arch }}-{{ checksum "project.clj" }} 
-
+        RAILS_ENV: test
+        RACK_ENV: test             
+        image: circleci/mysql:5.6
+        restore_cache: 
+         keys:-v1-myapp-{{ arch }}-{{ checksum "project.clj" }} 
 # if cache for exact version of `project.clj` is not present then load any most recent one -v1-myapp- 
     
-  steps:
+steps:
     - save_cache:
       key: v1-myapp-cache
       paths:
@@ -53,18 +50,16 @@ jobs:
 
     - restore_cache:
       key: v1-myapp-cache
-   
       steps:
       - add_ssh_keys:
       fingerprints:
-      - "b7:35:a6:4e:9b:0d:6d:d4:78:1e: 9a:97:2a:66:6b:be"
-    
-steps:
-     pattern:
-         { term }
-     term:
-     run:
-     command: 
+      - "b7:35:a6:4e:9b:0d:6d:d4:78:1e: 9a:97:2a:66:6b:be
+      steps:
+       pattern: 
+       { term }
+       - term:
+       run:
+       command: 
        $ let a=1 
        $ let b=0 
        $ let c=a/b 
@@ -154,40 +149,10 @@ restore_cache:
               key: v1-my-project-{{ checksum "project.clj" }}
               paths:
               - ~/.m2
-
-      # Save artifacts
+# Save artifacts
             - store_artifacts:
               path: /tmp/artifacts
               destination: build
-
-      # Upload test results
+# Upload test results
             - store_test_results:
               path: /tmp/test-reports
-
-              deploy-stage:
-    docker:
-      - image: ubuntu:14.04
-    working_directory: /tmp/my-project
-    steps:
-      - run:
-          name: deployment
-          command: ansible-playbook site.yml /usr/bin/open /runner/blahblah/run_deploy
-
-        deploy-prod:
-        docker:
-      - image: ubuntu:14.04
-        working_directory: /tmp/my-project
-      - steps:
-      
-
-        
-         workflows:
-          version: 3
-          uses: web3.org
-         run: Build deployment
-      - jobs:
-        build:
-        filters: 
-      - branches:
-      - develop:
-       - run: deploy
