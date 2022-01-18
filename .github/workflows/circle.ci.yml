@@ -30,44 +30,45 @@ jobs:
           │   └── results.xml
           └── rspec
               └── results.xml
-           RAILS_ENV: test
-           RACK_ENV: test
-          - image: circleci/mysql:5.6
-         restore_cache: 
+  RAILS_ENV: test
+  RACK_ENV: test             
+  image: circleci/mysql:5.6
+  restore_cache: 
     keys:-v1-myapp-{{ arch }}-{{ checksum "project.clj" }} 
 
 # if cache for exact version of `project.clj` is not present then load any most recent one -v1-myapp- 
     
-     steps:
-      - save_cache:
+  steps:
+    - save_cache:
       key: v1-myapp-cache
       paths:
         - ~/d1
 
-      - save_cache:
+    - save_cache:
       key: v1-myapp-cache-new
       paths:
         - ~/d2
 
-      - run: rm -f ~/d1 ~/d2
+    - run: rm -f ~/d1 ~/d2
 
-      - restore_cache:
+    - restore_cache:
       key: v1-myapp-cache
    
-     steps:
+      steps:
       - add_ssh_keys:
-     fingerprints:
+      fingerprints:
       - "b7:35:a6:4e:9b:0d:6d:d4:78:1e: 9a:97:2a:66:6b:be"
     
-    steps:
+steps:
      pattern:
          { term }
-          term:
-           run:
-            command:
-        '*' matches any sequence of non-Separator characters
-        '?' matches any single non-Separator character
-        '[' [ '^' ] { character-range }
+     term:
+     run:
+     command: 
+      '*'   
+matches any sequence of non-Separator characters 
+
+     '[' [ '^' ] { character-range }
         ']' character class (must be non-empty)
         c matches character c (c != '*', '?', '\\', '[')
         '\\' c matches character c
