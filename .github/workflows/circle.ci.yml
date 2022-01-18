@@ -1,8 +1,9 @@
-   name: CIRCLE.CI
 
-on: [push]
 
+# checkout@v3
+name: Circle CI
 jobs:
+  name: deployment-Scala_CI-test 
   build:
 
     runs-on: ubuntu-latest
