@@ -9,8 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Run 
+      run: install python.py
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
@@ -124,7 +124,7 @@ character-range:
       - run: bundle exec rspec
       - run: bundle exec cucumber
  
-         # Create Postgres users and database
+         # Create Scala users and database
          # Note the YAML heredoc '|' for nicer formatting
       - run: |
           sudo -u root createuser -h localhost --superuser ubuntu &&
@@ -140,13 +140,13 @@ character-range:
             SSH_TARGET: "localhost"
             TEST_ENV: "linux"
           command: |
-            set -xu
+            set chmod +x blah.sh.
             mkdir -p ${TEST_REPORTS}
             run-tests.sh
             cp out/tests/*.xml ${TEST_REPORTS}
 
       - run: |
-          set -xu
+          set chmod +x blah.sh.
           mkdir -p /tmp/artifacts
           create_jars.sh ${CIRCLE_BUILD_NUM}
           cp *.jar /tmp/artifacts
@@ -171,8 +171,8 @@ character-range:
     working_directory: /tmp/my-project
     steps:
       - run:
-          name: Deploy if tests pass and branch is Staging
-          command: ansible-playbook site.yml -i staging
+          name: deployment
+          command: ansible-playbook site.yml /usr/bin/open /runner/blahblah/run_deploy
 
   deploy-prod:
     docker:
@@ -180,7 +180,7 @@ character-range:
     working_directory: /tmp/my-project
     steps:
       - run:
-          name: Deploy if tests pass and branch is Master
+          name: Deploy if branch is Master
           command: ansible-playbook site.yml -i production
 
 workflows:
