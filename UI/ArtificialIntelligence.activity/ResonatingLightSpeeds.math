@@ -1,0 +1,15 @@
+Checkout@v4
+# import scientific calculator/keyboard/worker/ARTIFICIAL-Intrlligence worker
+# this file contains a calculation in theory would answer missing pieces of the puzzle for warp drive transportation and a few details in known mathematics.
+# this theory is called resonating light
+# this file and workers run on analog only
+# Artificial-Intelkegence carries both 20t ram 2@=1 digital 1 analog
+# include equation E¹=((C²+DM)C8)/3.14
+# include run data=math on theory then test for absolute
+
+Jobs:
+  Name: Test New Theory
+   Runson: Linux, arch64, windows, Mac, Android
+    Uses: accelerated hardware and memory storage, analog signal and communication, allow send receive +beacon service
+     Command: ./ai/using_google_search_with_keyboard_access_search_scientific_calculator/then_search_known_scientific_equations_to_comoare_math_to_test_new_theory+update=echo_print"new file in directory called if true new theory,else"show work print return 0
+ WGET: "https://googlesearch/searchbar+allow_worker_access_internet/wifi/bluetooth/NFC
